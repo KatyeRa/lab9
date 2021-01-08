@@ -1,14 +1,11 @@
-str = prompt("Введите слово для проверки")
-inPalindrome(str)
-
 function inPalindrome (str) {
-  str = srt.lengrh();
-  str2 == str.split('').reverse().join('');
-
-  if (str == str2){
-    alert(str + "- слово-палиндром")
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] == str[str.length - (i + 1)]) {
+      return true;
+    }
   }
-  else {
-    alert(str + "- слово - не палиндром")
-  }
+  return false;
 }
+
+str1 = prompt("Введите слово для проверки")
+alert(inPalindrome(str1))

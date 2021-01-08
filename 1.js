@@ -2,7 +2,7 @@ console.log ("Задача 1")
 let student = {
   firt_name: "Ракитова",
   last_name: "Екатерина",
-  group: 201-322,
+  group: "201-322",
 };
 let ReadStudent = "Список: ";
 for (key in student){
